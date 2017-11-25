@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{418E2617-7B4F-4F59-B69B-244AEBE7AE84}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Daniel001</RootNamespace>
     <AssemblyName>Daniel001</AssemblyName>
@@ -28,6 +28,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>SimpleSquare.SimpleSquare</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="SmallBasicFun, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">

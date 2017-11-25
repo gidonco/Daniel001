@@ -1,25 +1,26 @@
-﻿using SmallBasicFun;
+﻿using System;
+using Microsoft.SmallBasic.Library;
+using SmallBasicFun;
 
 namespace SimpleSquare
 {
-	public class SimpleSquare
-	{
-		public static void Main()
-		{
-			//	Show the tortoise --#1
+    public class SimpleSquare
+    {
+        public static void Main()
+        {
+            Tortoise.Show();
+            Tortoise.SetSpeed(10);
+            var sides = 100;
 
-			//  Make the tortoise move as fast as possible  --#6
+            for (int i = 0; i < sides; i++)
+            {
+                Tortoise.SetPenColor("interblue");
+                Tortoise.SetPenWidth(new Random().Next(1,10));
+                Tortoise.Move(100);
+                Tortoise.Turn(100);
+            }
+           
 
-			//  Do the following 4 times --#5.1
-
-			//     Change the color of the line the tortoise draws to blue --#4
-
-			//     Move the tortoise 50 pixels --#2
-
-			//     Turn the tortoise 90 degrees to the right --#3
-
-			//  Repeat --#5.2
-
-		}
-	}
+        }
+    }
 }
